@@ -7,16 +7,17 @@ public class DatabaseConfiguration {
 	private static final String DATABASE = "mydatabase";
 	
 	
-	private static DatabaseConfiguration dataBaseinstance;
+	private static DatabaseConfiguration DataBaseinstance;
 	
 	private DatabaseConfiguration() { }
 	
 	public static DatabaseConfiguration getInstance() {
-		if (dataBaseinstance == null) {
-			dataBaseinstance = new DatabaseConfiguration();
+		if (DataBaseinstance == null) {
+			DataBaseinstance = new DatabaseConfiguration();
+		}else{
+			return DataBaseinstance;
 		}
 		
-		return dataBaseinstance;
 	}
 	
 	public String getConfiguration() {
