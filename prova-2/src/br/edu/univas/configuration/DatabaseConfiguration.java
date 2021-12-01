@@ -14,6 +14,7 @@ public class DatabaseConfiguration {
 	public static DatabaseConfiguration getInstance() {
 		if (DataBaseinstance == null) {
 			DataBaseinstance = new DatabaseConfiguration();
+			return DataBaseinstance;
 		}else{
 			return DataBaseinstance;
 		}
